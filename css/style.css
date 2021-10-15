@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-main-bg: #f0f4fb;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Mulish", sans-serif;
+  background-color: var(--clr-main-bg);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+}
