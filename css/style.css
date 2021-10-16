@@ -19,6 +19,10 @@ body {
   min-height: 100vh;
   font-family: "Mulish", sans-serif;
   background-color: var(--clr-main-bg);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: #2c3e50;
 }
 
 ul {
@@ -30,4 +34,71 @@ button {
   border: 0;
   cursor: pointer;
   color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 3.5em;
+}
+
+h3 {
+  font-size: 0.75rem;
+  margin-bottom: 1em;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 5em;
+  border-radius: 1em;
+  width: 750px;
+  z-index: -1;
+}
+
+.contacts {
+  display: flex;
+  gap: 3em;
+}
+
+.contact {
+  width: 150px;
+  border-radius: 0.8em;
+  box-shadow: 0 0.5em 1em #c6d8f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #ffffff;
+  padding: 0 1em 1em;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: -1em;
+  z-index: -1;
+  background: var(--clr-main-bg);
+  border-radius: 1em;
+}
+
+.contact img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.options {
+  display: none;
 }
