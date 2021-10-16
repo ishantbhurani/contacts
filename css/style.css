@@ -63,7 +63,7 @@ h3 {
 
 .card {
   background-color: #ffffff;
-  padding: 5em;
+  padding: 6em;
   border-radius: 1em;
   width: 750px;
   z-index: 1;
@@ -107,6 +107,29 @@ h3 {
 
 .options {
   display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 0.5em 1em;
+  bottom: 0;
+  border-radius: 0.3em;
+  transform: translateY(90%);
+  box-shadow: 0 0.5em 1em #c6d8f6;
+}
+
+.option > button {
+  padding: 0.5em 0.8em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.option:last-child > button {
+  margin-bottom: 0;
+}
+
+.option > button:hover {
+  background-color: var(--clr-main-bg);
 }
 
 .add-new {
