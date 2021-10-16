@@ -71,6 +71,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 3em;
+  flex-wrap: wrap;
 }
 
 .contact {
@@ -127,4 +128,17 @@ h3 {
 
 .add-new::after {
   transform: translate(-50%, -50%) rotate(90deg);
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 90%;
+    padding: 3em 2em;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contacts {
+    flex-direction: column;
+  }
 }
