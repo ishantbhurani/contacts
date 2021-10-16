@@ -62,7 +62,7 @@ h3 {
   padding: 5em;
   border-radius: 1em;
   width: 750px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .contacts {
