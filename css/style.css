@@ -89,6 +89,10 @@ h3 {
   padding: 0 1em 1em;
 }
 
+.contact.show-menu .options {
+  display: block;
+}
+
 .contact::before {
   content: "";
   position: absolute;
