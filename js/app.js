@@ -14,6 +14,8 @@ optionsButtons.forEach((optBtn) =>
 contactItems.forEach((contact) =>
   contact.addEventListener("click", function () {
     modal.classList.add("show");
+    modalForm.name.value = this.querySelector("h3").textContent;
+    modalForm.phone.value = "+(222)-222-222";
   })
 );
 
