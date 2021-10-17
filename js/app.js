@@ -22,6 +22,8 @@ contactItems.forEach((contact) =>
 
 backdrop.addEventListener("click", function () {
   modal.classList.remove("show");
+  modalForm.name.value = "";
+  modalForm.phone.value = "";
 });
 
 addNew.addEventListener("click", function () {
