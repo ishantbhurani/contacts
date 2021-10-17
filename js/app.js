@@ -2,6 +2,7 @@ const optionsButtons = document.querySelectorAll(".options-btn");
 const contactItems = document.querySelectorAll(".contact");
 const modal = document.querySelector(".modal");
 const modalForm = modal.querySelector("form");
+const backdrop = modal.querySelector(".backdrop");
 
 optionsButtons.forEach((optBtn) =>
   optBtn.addEventListener("click", function () {
@@ -15,3 +16,7 @@ contactItems.forEach((contact) =>
     modal.classList.add("show");
   })
 );
+
+backdrop.addEventListener("click", function () {
+  modal.classList.remove("show");
+});
